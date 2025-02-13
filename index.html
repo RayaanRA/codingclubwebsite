@@ -1,27 +1,69 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="indexCSS.css">
-  <meta charset="UTF-8">  <!-- Character encoding -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Responsive design -->
-  <meta name="description" content="A short description of your webpage for SEO.">  <!-- SEO -->
-  <meta name="keywords" content="HTML, CSS, JavaScript, Web Development">  <!-- SEO keywords -->
-  <meta name="author" content="Your Name">  <!-- Author of the page -->
-  <meta name="robots" content="index, follow">
-  <title>RMHS DevOps</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High School Coding Club</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-
-<html>
 <body>
-  <h1 id="index-title">Rolling Meadows DevOps</h1>
+    <header>
+        <h1>Welcome to the High School Coding Club!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <div id="left-align-column">
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>The High School Coding Club is a community of students passionate about coding and technology. We meet weekly to learn new skills, collaborate on projects, and prepare for competitions.</p>
+        </section>
 
-  </div>
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li><strong>Weekly Meeting:</strong> Every Wednesday at 3 PM in Room 101</li>
+                <li><strong>Code-a-thon:</strong> March 15, 2025 - Sign up on our website!</li>
+                <li><strong>Guest Speaker Series:</strong> April 10, 2025 - Join us for a special talk by a local developer.</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Current Projects</h2>
+            <p>Here are some of the projects we're currently working on:</p>
+            <ul>
+                <li><strong>Website for Local Charity:</strong> A group project to create a website for a nearby charity organization.</li>
+                <li><strong>Game Development:</strong> Students are collaborating to develop a simple game using Python.</li>
+                <li><strong>App for School Events:</strong> We're building an app to help students keep track of school events and deadlines.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to join our club, feel free to reach out!</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 High School Coding Club. All rights reserved.</p>
+    </footer>
 </body>
-
-
-<!--Contact List Link-->
-<a href="Contact Us.html" target="_blank">Contact Us</a>
-
 </html>
