@@ -1,4 +1,4 @@
 # codingclubwebiste
 
 
-# https://rayaanra.github.io/codingclubwebsite.github.io/
+# https://rayaanra.github.io/codingclubwebsite/
