@@ -8,7 +8,7 @@
 <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <body>
     <header>
-        <h1 id="welcome-title">Welcome to the RMHS Coding Club Homepage!</h1>
+        <h1 id="welcome-title">Welcome to the RMHS Coding Club!</h1>
         <nav>
             <section id="About-us-section">
                 
@@ -63,21 +63,36 @@
 
 <!--ALL CSS STYLING-->
     <style>
-        .welcome-title {
-            color: black;
+        header {
+            background-image: url("rmhs-front.jpg");
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
         }
 
-        .bio {
+        #welcome-title {
+            color: darkorchid;
+            display: inline-block;
+            border: 3px solid black;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        #bio {
             font-family: 'Times New Roman', Times, serif;
             color: black;
         }
 
-        .about-us-section {
+        #about-us-section {
             text-align: center;
         }
 
-        .homepage-title {
+        #welcome-title {
             text-align: center;
         }
     </style>
