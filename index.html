@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="homepage-title">Homepage | RMHS DevOps</title>
 </head>
-<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <body>
     <header>
         <h1 id="welcome-title">Welcome to the RMHS Coding Club!</h1>
@@ -13,7 +12,7 @@
 
     <main>
         <section id="about">
-            <h2> <a href="RayaanRA/codingclubwebsite/Contact Us.html">About Us</a> </h2>
+            <h2><a href="Contact Us.html">About Us</a></h2>
             <p id="Bio">The High School Coding Club is a community of students 
                 passionate about coding and technology. <br>
                 We meet weekly to learn new skills, 
@@ -40,7 +39,6 @@
         <section id="contact">
             <h2>Contact Us</h2>
             <p>If you have any questions or would like to join our club, feel free to reach out!</p>
-            
         </section>
     </main>
 
@@ -48,12 +46,12 @@
         <p> 2025 Rolling Meadows High School Coding Club. All rights reserved.</p>
     </footer>
 
-<!--ALL CSS STYLING-->
+    <!-- ALL CSS STYLING -->
     <style>
         header {
             background-image: url("rmhs-front.jpg");
-            background-size: cover; 
-            background-position: center; 
+            background-size: cover;
+            background-position: center;
             background-repeat: no-repeat;
             height: 300px;
             display: flex;
@@ -75,21 +73,32 @@
             color: black;
         }
 
-        #about-us-section {
-            text-align: center;
-        }
-
-        #welcome-title {
-            text-align: center;
-        }
-
         #about {
-            background-color: rgba(0, 255, 0);
-            height: 200px;
-            width: 150px;
+            background-color: rgba(0, 255, 0, 0.7);  /* Semi-transparent green background */
+            height: 300px;  /* Height of the section */
+            width: 100%;    /* Make the width 100% of the container */
+            display: flex;
+            justify-content: center;  /* Center horizontally */
+            align-items: center;      /* Center vertically */
             text-align: center;
             padding: 20px;
-            
+            box-sizing: border-box;    /* Include padding in the width/height calculation */
+        }
+
+        #about h2 a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        #about h2 a:hover {
+            text-decoration: underline;
+        }
+
+        #Bio {
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+            font-size: 18px;
+            line-height: 1.5;
         }
     </style>
 </body>
