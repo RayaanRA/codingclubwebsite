@@ -9,30 +9,29 @@
     <br>
     <br>
     <br>
-    <header>
-        <p id="empty-text">Hello</p>
-        <br>
-        <br>
-        <br>
-        <br>
-    </header>
+    <header class="navbar">
+        <h1>Home</h1>
+        <h2>About</h2>
+        <h2>Services</h2>
+        <h2>Contact</h2>
+    </header>      
     <main>
-        <section id="about">
+        <div id="about">
             <h2><a href="ContactUs.html">About Us</a></h2>
             <p id="Bio">The High School Coding Club is a community of students 
                 passionate about coding and technology. <br>
                 We meet weekly to learn new skills, 
                 collaborate on projects, and help our community. <br></p>
-        </section>
+            </div>
 
-        <section id="events">
+        <div id="events">
             <h2>Upcoming Events</h2>
             <ul>
                 <li><strong>Weekly Meeting:</strong> Every Thursday at 3 PM in C-Wing</li>
             </ul>
-        </section>
+        </div>
 
-        <section id="projects">
+        <div id="projects">
             <h2>Current Projects</h2>
             <p>Here are some of the projects we're currently working on:</p>
             <ul>
@@ -40,12 +39,12 @@
                 <li><strong>Game Development:</strong> Students are collaborating to develop a simple game using Python.</li>
                 <li><strong>App for School Events:</strong> We're building an app to help students keep track of school events and deadlines.</li>
             </ul>
-        </section>
+        </div>
 
-        <section id="contact">
+        <div id="contact">
             <h2>Contact Us</h2>
             <p>If you have any questions or would like to join our club, feel free to reach out!</p>
-        </section>
+        </div>
     </main>
 
     <footer>
@@ -100,6 +99,16 @@
 
         #footer {
             text-align: center;
+        }
+
+        .navbar {
+            display: flex; /* This makes the headers align horizontally */
+            justify-content: space-around; /* Space them out evenly */
+            align-items: center; /* Vertically align them in the center */
+        }
+
+        .navbar h1, .navbar h2 {
+            margin: 0 10px; /* Add some spacing between the headers */
         }
 
     </style>
