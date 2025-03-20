@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="homepage-title">RMHS Coding Club | Homepage</title>
+    <link rel="icon" href="../Images/rmhs-mustang.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100..900&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Remove margins and padding from html and body */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Ensure full height */
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        body {
+            background-color: black;
+            font-family: 'Lora', serif;
+            color: white;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+        }
+
+        header h4 {
+            margin: 0;
+            font-size: 150%;
+        }
+
+        #home-nav {
+            display: flex;
+            gap: 25px;
+            text-align: right;
+            margin-right: 1px;
+            color: white;
+        }
+
+        h1, p {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.07);
+        }
+
+        #mainTEXT {
+            text-align: right;
+            font-size: 60px;
+            margin-right: 50px;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .fade-image {
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        nav a {
+            text-decoration: none; /* Remove underline */
+            color: white; /* Set text color to white */
+        }
+
+        /* Add color and underline on hover */
+        nav a:hover {
+            color: #5e00bd; /* Change color to yellow on hover */
+            text-decoration: underline; /* Underline on hover */
+            text-decoration-style: dotted;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h4 id="header_title" class="fade-image">R.M.H.S Development</h4>
+        <nav id="home-nav" class="fade-image">
+            <a href="../mainFiles/index.html" target="_blank"><h2>Home</h2></a>
+            <a href="../mainFiles/about.html" target="_blank"><h2>About</h2></a>
+            <a href="../mainFiles/contact.html" target="_blank"><h2>Contact</h2></a>
+            <a href="../mainFiles/mission.html" target="_blank"><h2>Mission</h2></a>
+        </nav>
+    </header>
+
+    <h1 id="mainTEXT" class="fade-image"><i>Students building <br> websites.</i></h1>
+    <img src="../Images/computer.jpg" style="position: relative; top: -250px; left: 20px;" 
+    alt="Computer image" width="650" height="500" class="fade-image">
+</body>
+</html>
