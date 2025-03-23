@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="homepage-title">RMHS Coding Club | Homepage</title>
+    <title id="homepage-title">Homepage | RMHS Coding Club</title>
     <link rel="icon" href="../Images/rmhs-mustang.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100..900&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--Oswald Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!--Geist Font-->
+    <link href="https://assets.codepen.io/605876/GeistVF.ttf" rel="stylesheet">
+
     <style>
+
         /* Remove margins and padding from html and body */
         html, body {
             margin: 0;
             padding: 0;
             height: 100%; /* Ensure full height */
-            overflow: hidden; /* Prevent scrolling */
         }
 
         body {
-            background-color: black;
-            font-family: 'Lora', serif;
+            background: #108dc7;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #ef8e38, #108dc7);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #ef8e38, #108dc7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            font-family: "Andalé Mono", monospace;
             color: white;
             overflow-x: hidden; /* Prevent horizontal scrolling */
         }
@@ -30,6 +41,9 @@
             align-items: center;
             padding: 10px 30px;
             position: sticky;
+            background: #108dc7;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #ef8e38, #108dc7);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #ef8e38, #108dc7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         }
 
         header h4 {
@@ -51,8 +65,9 @@
 
         #mainTEXT {
             text-align: right;
-            font-size: 60px;
+            font-size: 100px;
             margin-right: 50px;
+            margin-bottom: 30px;
         }
 
         @keyframes fadeIn {
@@ -72,7 +87,7 @@
 
         /* Add color and underline on hover */
         nav a:hover {
-            color: #5e00bd; /* Change color to yellow on hover */
+            color: #108dc7; /* Change color to yellow on hover */
             text-decoration: underline; /* Underline on hover */
             text-decoration-style: dotted;
         }
@@ -89,7 +104,5 @@
     </header>
 
     <h1 id="mainTEXT" class="fade-image"><i>Students building <br> websites.</i></h1>
-    <img src="../Images/computer.jpg" style="position: relative; top: -250px; left: 20px;" 
-    alt="Computer image" width="705" height="500" class="fade-image">
 </body>
 </html>
