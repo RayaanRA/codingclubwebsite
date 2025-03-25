@@ -130,40 +130,57 @@ nav a {
   /* Scrolling Txt Animation */
   .scrolling-words-container {
     display: flex;
-    align-items: center;
-    font-size: 2rem;
-    font-weight: 600; 
+    align-items: right;
+    font-size: 200px;
+    font-weight: 600;
+    font-family: "Andalé Mono", monospace;
+    overflow: hidden;
+    margin-left: 1450px;
   }
   
   .scrolling-words-box {
-    height: 3rem;
-    margin: auto;
+    height: 210px; /* Adjust based on font size */
     overflow: hidden;
-    
-    ul {
-      margin: 0 0.625rem;
-      padding: 0;
-      animation: scrollUp 4s infinite;
-      li {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        height: 3rem;
-        list-style: none; 
-      }
-    }
-  }
+    position: relative;
+}
+
+.scrolling-words-box ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    animation: scrollUp 10s linear infinite; /* 10s total duration for smooth timing */
+}
+
+.scrolling-words-box li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 210px; /* Ensure each word fits fully */
+    list-style: none;
+}
   
-  $item-count: 5;
-  
+  /* Keyframes for scrolling animation */
   @keyframes scrollUp {
-    @for $i from 1 through ($item-count - 1) {
-      #{($i * 25) - 10%}, #{$i * 25%} {
-        transform: translateY((-100% / $item-count) * $i);
-      }
+    0%, 20% {
+        transform: translateY(0);
     }
-  }
-  
+    25%, 45% {
+        transform: translateY(-25%);
+    }
+    50%, 70% {
+        transform: translateY(-50%);
+    }
+    75%, 95% {
+        transform: translateY(-75%);
+    }
+    100% {
+        transform: translateY(-100%); /* Moves beyond last word */
+    }
+    110% {
+        transform: translateY(-125%)
+    }
+
+}
 </style>
 
 <body>
@@ -183,14 +200,13 @@ nav a {
     <div class="scrolling-words-container">
         <div class="scrolling-words-box">
           <ul>
-            <li style="color: #ea4335">Code</li>
-            <li style="color: #4285f4">Build</li>
-            <li style="color: #34a853">Create</li>
-            <li style="color: #fbbc04">Design</li>
-            <li style="color: #ea4335">Code</li>
+            <li style="font-family: 'Andalé Mono', monospace;"><i>websites.</i></li>
+            <li style="font-family: 'Andalé Mono', monospace;"><i>connections.</i></li>
+            <li style="font-family: 'Andalé Mono', monospace;"><i>solutions.</i></li>
+            <li style="font-family: 'Andalé Mono', monospace;"><i>platforms.</i></li>
+            
           </ul>
         </div>
-        <span style="color: #5f6368">for everyone</span>
     </div>
 
 
