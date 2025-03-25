@@ -53,10 +53,11 @@
 
         #home-nav {
             display: flex;
-            gap: 25px;
+            gap: 40px;
             text-align: right;
             margin-right: 1px;
             color: white;
+            font-size: 30px;
         }
 
         h1, p {
@@ -65,7 +66,7 @@
 
         #mainTEXT {
             text-align: right;
-            font-size: 100px;
+            font-size: 200px;
             margin-right: 50px;
             margin-bottom: 30px;
         }
@@ -85,24 +86,80 @@
             color: white; /* Set text color to white */
         }
 
-        /* Add color and underline on hover */
-        nav a:hover {
-            color: #108dc7; /* Change color to yellow on hover */
-            text-decoration: underline; /* Underline on hover */
-            text-decoration-style: dotted;
+
+        /* hover animation */
+        .hover-underline {
+            color: #ffffff;
+            position: relative;
+            display: inline-block;
         }
+          
+        .hover-underline::after,
+        .hover-underline::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to right, #ff0000, #00ffff);
+            bottom: -2px;
+            left: 0;
+            transform: scaleX(0);
+            /*
+            transform-origin: right;
+            */
+            transition: transform 0.4s ease-out;
+        }
+          
+        .hover-underline::before {
+            top: 0px;
+            transform-origin: left;
+        }
+          
+        .hover-underline:hover::after,
+        .hover-underline:hover::before {
+            transform: scaleX(1);
+          }
+
+          #mainDiv p {
+            font-size: 30px;
+            text-align: right;
+            margin-right: 50px;
+            margin-top: 10px;
+          }
+
+          /* Scrolling Txt Animation */
+          .content {
+
+          }
     </style>
 </head>
 <body>
     <header>
         <nav id="home-nav" class="fade-image">
-            <a href="../mainFiles/index.html" target="_blank"><h2>Home</h2></a>
-            <a href="../mainFiles/about.html" target="_blank"><h2>About</h2></a>
-            <a href="../mainFiles/contact.html" target="_blank"><h2>Contact</h2></a>
-            <a href="../mainFiles/mission.html" target="_blank"><h2>Mission</h2></a>
+            <a href="../mainFiles/index.html" target="_blank" class="hover-underline"><h2>Home</h2></a>
+            <a href="../mainFiles/about.html" target="_blank" class="hover-underline"><h2>About</h2></a>
+            <a href="../mainFiles/contact.html" target="_blank" class="hover-underline"><h2>Contact</h2></a>
+            <a href="../mainFiles/mission.html" target="_blank" class="hover-underline"><h2>Mission</h2></a>
         </nav>
     </header>
 
-    <h1 id="mainTEXT" class="fade-image"><i>Students building <br> websites.</i></h1>
+    <div id="mainDiv">
+        <h1 id="mainTEXT" class="fade-image"><i>Students building</i></h1>
+    </div>
+
+    <div class="content">
+        <div class="content__container">
+            <p class="content__container__text">Students building </p>
+            <ul class="content__list">
+                <li class="content__list__item">websites.<div class=""></div></li>
+                <li class="content__list__item">communities.</li>
+                <li class="content__list__item">solutions.</li>
+                <li class="content__list__item">platforms.</li>
+            </ul>
+        </div>
+    </div>
+
+
+
 </body>
 </html>
