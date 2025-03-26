@@ -1,10 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="homepage-title">Mission Page</title>
+    <link rel="icon" href="../Images/rmhs-mustang.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100..900&family=Lora:wght@400;700&display=swap" rel="stylesheet">
 
-    </head>
+    <!--Oswald Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!--Geist Font-->
+    <link href="https://assets.codepen.io/605876/GeistVF.ttf" rel="stylesheet">
 
-    <body>
-        
-    </body>
+    <style>
+
+        /* Remove margins and padding from html and body */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Ensure full height */
+        }
+
+        body {
+            background: #108dc7;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #ef8e38, #108dc7);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #ef8e38, #108dc7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            font-family: "Andalé Mono", monospace;
+            color: white;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            position: sticky;
+              /* fallback for old browsers */
+        }
+        #home-nav {
+            display: flex;
+            gap: 25px;
+            position: fixed;  /* Fix position to the screen */
+            top: 10px;
+            left: 10px;
+            text-align: left;
+            color: white;
+            background: rgba(16, 141, 199, 0.8); /* Semi-transparent background */
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        header {
+            display: none; /* Completely hides the header */
+        }
+
+
+        header h4 {
+            margin: 0;
+            font-size: 150%;
+        }
+
+        #home-nav {
+            display: flex;
+            gap: 25px;
+            text-align: right;
+            margin-right: 1px;
+            color: white;
+        }
+
+        h1, p {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.07);
+        }
+
+        #mainTEXT {
+            text-align: right;
+            font-size: 100px;
+            margin-right: 50px;
+            margin-bottom: 30px;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .fade-image {
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        nav a {
+            text-decoration: none; /* Remove underline */
+            color: white; /* Set text color to white */
+        }
+
+        /* Add color and underline on hover */
+        nav a:hover {
+            text-decoration: underline; /* Underline on hover */
+            text-decoration-style: dotted;
+        }
+    </style>
+    <center>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /* Center the box */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            
+        }
+
+        /* Styling for the bullet box */
+        .bullet-box {
+            width: 350px;
+            padding: 15px;
+            border: 2px solid #000;
+            background-color: #f8b256;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .bullet-list {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding-left: 20px;
+            font-family: 'Andalé Mono';
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bullet-box">
+        <ul class="bullet-list">
+            <li>Develop technical proficiency in coding, design, and user experience
+            </li>
+            <li>Build a portfolio of professional projects to enhance our future academic and career opportunities
+            </li>
+            <li>Foster a supportive community where students can learn, teach, and build together
+            </li>
+            <li>Provide valuable digital solutions to our community while earning recognition for our work
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
+
+</center>
+</head>
+<body>
+    <header></header>
+        <nav id="home-nav" class="fade-image">
+            <a href="../mainFiles/index.html" target="_blank"><h2>Home</h2></a>
+            <a href="../mainFiles/about.html" target="_blank"><h2>About</h2></a>
+            <a href="../mainFiles/contact.html" target="_blank"><h2>Contact</h2></a>
+            <a href="../mainFiles/mission.html" target="_blank"><h2>Mission</h2></a>
+        </nav>
+    
+
+    <h1 id="mainTEXT" class="fade-image"><i> <p><p>Our</p></p><br><p>Mission.</p></i></h1>
+</body>
 </html>
