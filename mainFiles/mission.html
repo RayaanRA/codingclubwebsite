@@ -18,6 +18,7 @@
     <link href="https://assets.codepen.io/605876/GeistVF.ttf" rel="stylesheet">
 
     <style>
+
         /* Remove margins and padding from html and body */
         html, body {
             margin: 0;
@@ -45,16 +46,18 @@
         }
         #home-nav {
             display: flex;
-            gap: 25px;
+            gap: 15px;  /* Decrease the gap between items */
             position: fixed;  /* Fix position to the screen */
-            top: 10px;
+            top: 60px;  /* Keeps the box moved down */
             left: 10px;
             text-align: left;
             color: white;
-            background: rgba(16, 141, 199, 0.8); /* Semi-transparent background */
-            padding: 10px;
+            background: transparent; 
+            padding: 5px 10px;  
             border-radius: 8px;
-        }
+            width: auto;  
+}
+
 
         header {
             display: none; /* Completely hides the header */
@@ -137,6 +140,7 @@
             align-items: flex-start;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
             margin-left: 20px;
+            margin-top: 0px;
         }
 
         .bullet-list {
@@ -167,7 +171,8 @@
 </body>
 </html>
 
-
+</center>
+</head>
 <body>
     <header></header>
         <nav id="home-nav" class="fade-image">
