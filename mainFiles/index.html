@@ -13,6 +13,7 @@
   <style>
     html,
     body {
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
       height: 100%;
       margin: 0;
       padding: 0;
@@ -23,8 +24,65 @@
     }
 
     body {
-      background: #2200ff;
-      background: linear-gradient(180deg, rgba(34, 0, 255, 1) 0%, rgba(60, 31, 222, 1) 50%, rgba(81, 38, 252, 1) 100%);
+      background: #186aed;
+      background: radial-gradient(circle, rgba(24, 106, 237, 1) 0%, rgba(134, 109, 247, 1) 50%, rgba(237, 222, 83, 1) 100%);
+    }
+
+    /* Navigation */
+    .navbar {
+      display: flex;
+      justify-content: right;
+      gap: 5%;
+      list-style: none;
+    }
+
+    .navbar li {
+      font-size: 200%;
+    }
+
+    .navbar li a:hover {
+      color: white;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: black;
+    }
+
+    /* Main Text Home Page */
+    #main {
+      font-size: 400%;
+      margin-left: 10%;
+      margin-top: 14%;
+      margin-bottom: 10%;
+      padding: 10px;
+    }
+
+    /* Front Animation */
+    @keyframes textswitch {
+      0% {
+        bottom: 5%
+      }
+
+      25% {
+        bottom: 5px;
+      }
+
+      50% {
+        bottom: 5px;
+      }
+
+      75% {
+        bottom: 5px;
+      }
+
+      100% {
+        bottom: 5px;
+      }
+    }
+
+    #nestedDIV {
+      animation: textswitch;
     }
   </style>
 </head>
@@ -44,7 +102,12 @@
   </header>
 
   <main>
-    <h1 style="color: white; text-align: center;">Students building websites.</h1>
+    <div id="main">
+      <h1 style="text-align: left;">Students building</h1>
+      <div id="nestedDIV">
+
+      </div>
+    </div>
   </main>
   <footer>
   </footer>
