@@ -19,13 +19,13 @@
       padding: 0;
     }
 
-    .header {
-      width: 100%;
+    body {
+      background-image: url("../Images/greenbackground.jpg");
+      background-size: cover;
     }
 
-    body {
-      background: #186aed;
-      background: radial-gradient(circle, rgba(24, 106, 237, 1) 0%, rgba(134, 109, 247, 1) 50%, rgba(237, 222, 83, 1) 100%);
+    .header {
+      width: 100%;
     }
 
     /* Navigation */
@@ -34,6 +34,7 @@
       justify-content: right;
       gap: 5%;
       list-style: none;
+      margin-right: 3%;
     }
 
     .navbar li {
@@ -53,36 +54,14 @@
     #main {
       font-size: 400%;
       margin-left: 10%;
-      margin-top: 14%;
+      margin-top: 5%;
       margin-bottom: 10%;
       padding: 10px;
+      color: rgb(90, 126, 0);
     }
 
-    /* Front Animation */
-    @keyframes textswitch {
-      0% {
-        bottom: 5%
-      }
-
-      25% {
-        bottom: 5px;
-      }
-
-      50% {
-        bottom: 5px;
-      }
-
-      75% {
-        bottom: 5px;
-      }
-
-      100% {
-        bottom: 5px;
-      }
-    }
-
-    #nestedDIV {
-      animation: textswitch;
+    #body_main {
+      font-size: 50%;
     }
   </style>
 </head>
@@ -103,10 +82,10 @@
 
   <main>
     <div id="main">
-      <h1 style="text-align: left;">Students building</h1>
-      <div id="nestedDIV">
-
-      </div>
+      <h1 style="text-align: left;">Students building <br>websites.</h1>
+      <p id="body_main">
+        Learn more about our Youth-Led Nonprofit Organization!
+      </p>
     </div>
   </main>
   <footer>
